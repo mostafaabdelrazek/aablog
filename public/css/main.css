@@ -1,0 +1,231 @@
+* {
+
+}
+
+
+.navbar a img{
+    width: 4.33rem;
+}
+
+.navbar div ul li {
+    padding: 0 3rem;
+   
+}
+
+
+.nav-wrapper{
+    background: url('../images/back3.jpg') center;
+    background-size: cover;
+        height: 35rem;
+    
+}
+.card-section{
+    margin-bottom: 5.5rem;
+    flex-wrap: wrap;
+    margin-top: -4rem;
+
+}
+
+.card {
+    margin-top: 2rem;
+    
+}
+.card *{
+    color: antiquewhite;
+}
+.about{
+    text-align: center;
+}
+.about .line{
+    margin:2rem 18rem;
+    border-top: 2.5px solid #e0a722 ;
+}
+.about .content{
+    margin: 0 4rem;
+    margin-bottom: 5.5rem ;
+    
+}
+
+.about-photos{
+    position: relative;
+}
+
+.about-photos .p{
+    width: 20rem;
+    height: 27rem;
+}
+.about-photos div .p1{
+    background: url('../images/about.jpg') center;
+    background-size: cover;
+}
+.about-photos div .p2{
+    background: url('../images/about2.jpg') center;
+    background-size: cover;
+}
+.about-photos div .p3{
+    background: url('../images/about1.jpg') center;
+    background-size: cover;
+}
+.about-photos::after{
+    content: "";
+    position: absolute;
+    top:6.25rem;
+    left: 0;
+    background-color: #8c6e3b;
+    width: 100%;
+    height: 7.5rem;
+    z-index: -1;
+}
+
+
+.adv-read{
+    margin: 4.8rem auto;
+}
+
+
+.adv-read h1 , .adv-read .right-sign{
+    color: #4971f5;
+    font-size: 5rem;
+    font-family: fantasy;
+
+}
+.adv h4{
+    font-weight: bold;
+    font-size: 2.4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.adv-read-body{
+    line-height: 2rem;
+    padding-top: 0.9rem;
+}
+.adv-read .right-sign{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.adv-read p{
+    margin-left: 3.5rem;
+}
+
+.adv-image{
+    background: url('../images/adv1.jpg') center;
+    background-size: cover;
+    min-height: 40rem;
+    padding: 3.5rem 2rem;
+    color: antiquewhite;
+}
+.adv-image h1{
+    font-weight: bold;
+    font-size: 5rem;
+    letter-spacing: 0.3rem;
+
+}
+.adv-image span{
+    
+    margin-right: 4rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    
+}
+
+.programs{
+    background: url('../images/ad.jpg')  center;
+    background-size: cover;
+    min-height: 40rem;
+    
+}
+
+.programs .p-card-section{
+    min-height: 40rem;
+}
+
+.programs .p-card-section .card{
+    margin-bottom: 1rem;
+    background-color:  #ff6600;
+}
+
+.programs .p-card-section .card *{
+    color: antiquewhite;
+}
+
+
+footer{
+    background: #111111;
+ }
+ 
+ .footer-info{
+     display: flex;
+     flex-wrap:wrap ;
+     justify-content: center;
+     padding: 5rem 0px;
+    }
+ 
+ .footer-info div h4{
+     display: inline-block;
+     color: #fff;
+     text-transform: uppercase;
+     font-size: 1rem;
+     font-family: fantasy;
+     letter-spacing: 2px;
+     padding: 3rem 0px;
+     border-bottom: 1.8px solid #ffffff20;
+
+ }
+ .footer-info div{
+     padding: 0px 2rem;
+ }
+ .footer-info div p , .footer-info div ul{
+     color: #3D3D2E;
+     font-size: 20px;
+     list-style: none;
+     word-spacing: 0.15rem;
+     padding-top:18px;
+     display: block;
+ }
+ .footer-info-center ul li{
+     padding: 8px 0px;
+     text-transform: capitalize;
+ }
+ 
+ .footer-info-left{
+     width: 450px;
+    
+     
+ }
+ .footer-info-center{
+     
+ }
+ .footer-info-right{
+     width: 330px;
+ }
+ .footer-info-right form{
+     display: flex;
+ }
+ .footer-info-right form input ,.footer-info-right form button{
+     padding: 0px;
+     border:none;
+     margin: 1.5rem 0px;
+     height: 40px;
+ }
+ .footer-info-right form button{
+     width: 40px;
+     background: #000;
+     color: #F9A828;
+     font-size: 1.5rem;
+     cursor: pointer;
+ }
+ .footer-info-right form input{
+     width: 200px;
+     background: #ffffff15;
+     color: #fff;
+     padding: 0px 10px;
+ }
+ .copy-rights{
+     color: #3D3D2E;
+     text-align: center;
+     text-transform:uppercase;
+     font-size:12px;
+     letter-spacing: 2.5px;
+     padding: 0.4rem;
+ }
+ 

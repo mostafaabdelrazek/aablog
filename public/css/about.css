@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+.navbar a img{
+    width: 4.33rem;
+}
+
+
+.nav-wrapper{
+    background-color: #111111ed;
+    background-image: none;
+    height: inherit;
+}
+
+.about-container{
+    margin: 4rem auto;
+}
+.about-left{
+    position: relative;
+    height: auto;
+    width: 100%;
+    min-height: 400px;
+}
+.about-left::after{
+position: absolute;
+content: '';
+bottom: 0;
+left: 0;
+width: 100%;
+background-color: #518d97c0;
+height: 60%;
+z-index: -1;
+}
+
+.about-left .about-img{
+    height: 90%;
+    width: 100%;
+    background-image: url('../images/ahmed2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.about-right{
+    box-shadow: 1px 0px 10px #888888;
+}
+.about-section{
+    margin: 6rem 1.5rem;
+}
+.about-section h1{
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 2.5rem ;
+    margin-top: 0.4rem;
+    color: #518d97;
+}
+.about-section small{
+    text-transform: uppercase;
+}
+.about-section p{
+    line-height: 2.5rem;
+    margin: 2.5rem auto;
+}
+.about-section a{
+    padding: 0.5rem 2rem;
+    background-color: #518d97;
+    color: antiquewhite;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.detailed-section{
+    margin-top: 6rem;
+}
+.detailed-section h2{
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+.detailed-section .col-md-6 p{
+    line-height: 2.5rem;
+}
