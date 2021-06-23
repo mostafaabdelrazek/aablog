@@ -33,7 +33,7 @@
                     <td>{{$post->id}}</td>
                     <td>{{$post->title}}</td>
                     <td>{{$post->slug}}</td>
-                    <td>{{ substr(strip_tags($post->body) , 0 , 20)}}  {{ strlen(strip_tags($post->body) > 20 ?'.....' : '' ) }}</td>
+                    <td>{{ substr(strip_tags($post->body) , 0 , 50)}}  {{ strlen(strip_tags($post->body) > 50 ?'.....' : '' ) }}</td>
                     <td>{{$post->updated_at}}</td>
                     <td>
                         <a href="{{route('posts.show' , $post)}}" class="btn btn-sm btn-outline-info"><i class="far fa-eye"></i></a>

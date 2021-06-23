@@ -1,4 +1,16 @@
 @extends('layouts.app')
+@section('styles')
+{!! Html::script('https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js' , ['referrerpolicy' => 'origin']) !!}
+
+<script>
+    tinymce.init(
+        {
+           selector: '#featuredtextarea'
+        }
+    )
+</script>
+
+@endsection
 @section('content')
 <div class="col-md-8 offset-md-2">
     
@@ -10,7 +22,7 @@
     {{Form::label('slug' , 'URL-Slug')}}
     {{Form::text('slug' , null , ['class' => 'form-control'])}}
     {{Form::label('body' , 'Blog Body')}}
-    {{Form::textarea('body' , null , ['class' => 'form-control'])}}
+    {{Form::textarea('body' , null , ['class' => 'form-control' ,'id' => 'featuredtextarea' , 'rows' => '20' , 'required'])}}
     {{Form::submit('Update a Post' , ['class' => 'btn btn-lg btn-success btn-mr'])}}
     {{Form::close()}}
     

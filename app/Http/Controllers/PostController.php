@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\post;
 use Illuminate\Http\Request;
 use Session;
+use Purifier;
 
 class PostController extends Controller
 {
@@ -51,7 +52,7 @@ class PostController extends Controller
         //create a new object and fill request data into
         $post = new Post();
         $post->title    = $request->title;
-        $post->body     = $request->body;
+        $post->body     = Purifier::clean($request->body);
         $post->slug     = $request->slug;
         //save the new object to database
         $post->save();

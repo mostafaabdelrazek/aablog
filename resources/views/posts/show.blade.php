@@ -23,6 +23,7 @@
                 <input type="submit" value="DELETE" class="btn btn-mr btn-lg  btn-block btn-outline-danger" onclick="return confirm('Are you sure to delete this post {{$post->title}}?')">
             </form>
             <a href="{{route('posts.edit' , $post)}}" class="btn btn-mr btn-lg  btn-block btn-outline-secondary">Edit</a>
+            <a href="{{route('posts.index')}}" class=""><<<<< back to all posts</a>
           </div>
         </div>
     </div>
@@ -32,7 +33,7 @@
         <div class="row">
             <div class="col-md-10">
     
-                <p>{{$post->body}}</p>
+                <p>{!!$post->body!!}</p>
             </div>
          </div>
      </div>
