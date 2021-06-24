@@ -1,5 +1,9 @@
 @extends('main')
 @section('title' , '| Home')
+@section('stylesheets')
+    {!!Html::style(url('css/barimage.css')) !!}
+@endsection
+
 @section('content')
 
 <!-- card start !!!-->

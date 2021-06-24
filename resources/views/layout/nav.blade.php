@@ -18,7 +18,7 @@
                   <a class="nav-link" href="{{url('/contact')}}">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('blog') ? 'active' : '' }}" href="#">Blogs</a>
+                    <a class="nav-link {{ Request::is('blog') ? 'active' : '' }}" href="{{url('/blogs')}}">Blogs</a>
                   </li>
               </ul>
             </div>

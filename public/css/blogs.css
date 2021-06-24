@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header-title{
+text-align: center;
+margin-top: -10rem;
+margin-bottom: 10rem;
+color: #184461;
+text-transform: uppercase;
+}
+
+.nav-wrapper{
+    background: url('../images/back-blog.jpg') center;
+    background-size: cover;
+}
+.navbar-dark{
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-dark::after{
+    z-index: -1;
+    position: absolute;
+    content: '';
+    width: 65%;
+    height: 650%;
+    background-color: red;
+    top: 0;
+    left: -10rem;
+    transform: rotate(40deg);
+    opacity: 69%;
+    background-image: linear-gradient( to right,#00FFD3 ,#FF0000 );
+
+}
+
+.nav-link , .navbar-toggler-icon{
+    color: rgb(106, 106, 106) !important;
+}
+
+.navbar-toggler-icon{
+    background-color: #184461 !important;
+}
+
+.blog-container{
+    margin: 3rem 0;
+}
+.blog-title{
+    padding: 2rem 0 ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.blog-image{
+    padding: 0;
+    margin: 0;
+}
+.blog-body div p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.blog-desc{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: end;
+    justify-content:space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.blog-desc div div{
+    margin: 3rem 0;
+}
+
+.reverse{
+    align-items: start;
+}
+
+.desc , .desc-reverse{
+    position: relative;
+    margin: 1rem 0;
+    padding: 0  0.2rem;
+    padding-top:0.4rem;
+    font-size: small;
+}
+.desc::after{
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    right: -2rem;
+    top: 0rem;
+}
+.after-reverse::after{
+    z-index: -1;
+    left: -2rem;
+}
+
+.yellow::after{
+    background-color: #D8D176;
+}
+
+.ment::after{
+    background-color: #3BAA97;
+}
+
+.red::after{
+    background-color: #D43A3A;
+}
+
+.desc span{
+    font-family: bold;
+}
+
+
+
+
+/*
+.blog-desc .circle{
+    width: 2rem;
+    height: 2rem;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: ;
+}
+*/

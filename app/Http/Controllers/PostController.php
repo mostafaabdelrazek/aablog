@@ -100,7 +100,7 @@ class PostController extends Controller
             'body'  =>  'required|min:20'
         ]);
         $post->title    = $request->title;
-        $post->body     = $request->body;
+      $post->body     = Purifier::clean($request->body);
         $post->slug     = $request->slug;
         $post->save();
 

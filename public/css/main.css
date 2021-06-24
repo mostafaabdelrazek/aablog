@@ -14,11 +14,9 @@
 
 
 .nav-wrapper{
-    background: url('../images/back3.jpg') center;
-    background-size: cover;
-        height: 35rem;
-    
-}
+    background-image: linear-gradient( to right , rgb(209, 130, 27),rgb(51, 20, 160));}
+
+
 .card-section{
     margin-bottom: 5.5rem;
     flex-wrap: wrap;

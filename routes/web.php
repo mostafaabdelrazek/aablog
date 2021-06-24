@@ -22,4 +22,6 @@ Route::resource('posts' , 'postController');
 Route::resource('categories' , 'categoriesController')->except(['create' , 'show']);
 Route::resource('tags' , 'tagsController')->except(['create' , 'show']);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin', 'HomeController@index')->name('admin');
+
+Route::get('/blogs','blogsController@index');
