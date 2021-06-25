@@ -25,3 +25,4 @@ Route::resource('tags' , 'tagsController')->except(['create' , 'show']);
 Route::get('/admin', 'HomeController@index')->name('admin');
 
 Route::get('/blogs','blogsController@index');
+Route::get('/blogs/{slug}' ,'blogsController@single');

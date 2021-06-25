@@ -35,13 +35,7 @@ text-transform: uppercase;
 
 }
 
-.nav-link , .navbar-toggler-icon{
-    color: rgb(106, 106, 106) !important;
-}
 
-.navbar-toggler-icon{
-    background-color: #184461 !important;
-}
 
 .blog-container{
     margin: 3rem 0;
@@ -60,13 +54,16 @@ text-transform: uppercase;
 .blog-desc{
     padding: 0;
     margin: 0;
-    display: flex;
+   
     flex-wrap: wrap;
     flex-direction: column;
     align-items: end;
     justify-content:space-between;
     height: 100%;
     width: 100%;
+}
+.desc-flex{
+    display: flex !important;
 }
 
 .blog-desc div div{

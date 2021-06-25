@@ -10,4 +10,8 @@ class blogsController extends Controller
     public function index(){
         return view('pages.blogs.index');
     }
+
+    public function single($slug){
+        return view('pages.blogs.single')->withSlug($slug);
+    }
 }

@@ -14,9 +14,16 @@
 
 
 .nav-wrapper{
-    background-image: linear-gradient( to right , rgb(209, 130, 27),rgb(51, 20, 160));}
+    background-color: transparent;
+}
 
+.nav-link , .navbar-toggler-icon{
+    color: rgb(106, 106, 106) !important;
+}
 
+.navbar-toggler{
+    background-color: rgba(106, 106, 106, 0.535) !important;
+}
 .card-section{
     margin-bottom: 5.5rem;
     flex-wrap: wrap;

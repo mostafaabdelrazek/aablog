@@ -21,8 +21,8 @@
         
     <div class="row blog-container">
         <div class="col-lg-2 offset-lg-4  ">
-            <div class="blog-desc d-none d-lg-block ">
-                <div class="">
+            <div class=" desc-flex d-none d-lg-block blog-desc  ">
+                <div>
                     <div>
                         <h6 class="desc red">Category: Ahmed Yasser</h6>
                     </div>
@@ -78,7 +78,7 @@
             </div>
         </div>
         <div class="col-md-2">
-            <div class="blog-desc reverse d-none d-lg-block">
+            <div class="desc-flex blog-desc reverse d-none d-lg-block">
               <div>
                 <div>
                     <h6 class="desc after-reverse red"> <span> Category: </span>Ahmed Yasser</h6>
@@ -98,7 +98,7 @@
 
     <div class="row blog-container">
         <div class="col-lg-2 offset-lg-4 ">
-            <div class="blog-desc d-none d-lg-block">
+            <div class="desc-flex blog-desc d-none d-lg-block">
                 <div>
                     <div>
                         <h6 class="desc red">Category: Ahmed Yasser</h6>
@@ -137,4 +137,14 @@
 
 @section('scripts')
 {{Html::script('js/home.js')}}
+
+<script>
+    $(document).ready(function(){
+        console.log($(window).width());
+        if( $(document ).width() < 768 ){
+            $('.blog-desc').removeClass('desc-flex');
+        }
+    });
+</script>
+
 @endsection
